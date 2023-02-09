@@ -1,0 +1,7 @@
+.shop__main {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
