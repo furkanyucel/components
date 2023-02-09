@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--! css -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+
+  <!--! Fontawesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+  <!--! Boostrap Icons CDN  -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+  />
+
+  <!--! Glide.js Css CDN  -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css"
+  />
+
+  <title>Main | Components - Shop Page Grid</title>
+
+  <style>
+    .categories__list {
+  display: none;
+}
+
+.categories__list.active {
+  display: block;
+}
+
+.bi-chevron-down {
+  transform: rotate(180deg);
+}
+
+  </style>
+</head>
+<body>
+  <section class="shop__main">
+    <!-- sidebar start -->
+    <sidebar class="sidebar">
+      <i class="d-none bi bi-filter"></i>
+      <p class="filter__title">Filter</p>
+
+      <div class="filter__clicked-list">
+        <div class="filter__clicked-item">
+          
+          <span onclick="this.parentElement.style.display='none'" class="filter__clicked-text">
+            <i class="bi bi-x-lg"></i> Accessories
+          </span>
+        </div>
+
+        <div class="filter__clicked-item">
+          <span onclick="this.parentElement.style.display='none'" class="filter__clicked-text">
+            <i class="bi bi-x-lg"></i> Wooden
+          </span>
+        </div>
+      </div>
+
+      <ul class="accordion__list">
+        <li class="accordion__items categories">
+          <div class="abc">
+            <a class="categories__title" href="#" >Categories
+            <i class="bi bi-chevron-up ml-auto"></i></a>
+          </div>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <a class="categories__link" href="#">Accessories</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">Cabinets</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">Amchairs</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">Bookcases</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">Curtains</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">Coffee tables</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">Decor</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">Ottomans</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">Floor Lamps</a>
+            </li>
+          </ul>
+
+        </li>
+
+        <li class="accordion__item types">
+          <a class="categories__title" href="#" >Types <i class="bi bi-chevron-up ml-auto"></i></a>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+              <input type="checkbox" name="" id="categories-check"> Wooden
+            </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+              <input type="checkbox" name="" id="categories-check"> Iron
+            </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+              <input type="checkbox" name="" id="categories-check"> Ceramic
+            </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+              <input type="checkbox" name="" id="categories-check"> Material
+            </a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link" href="#">
+              <input type="checkbox" name="" id="categories-check"> Glass
+            </a>
+            </li>
+          </ul>
+        
+        </li>
+
+        <li class="accordion__item colors">
+          <a class="categories__title" href="#" >Colors <i class="bi bi-chevron-up ml-auto"></i></a>
+          <ul class="categories__list color--list">
+            <label for="darkest"></label>
+              <input type="checkbox" id="gray3" name="color" value="gray3">
+            <label for="gray3"></label>
+              <input type="checkbox" id="gray4" name="color" value="gray4">
+            <label for="gray4"></label>
+              <input type="checkbox" id="darker-blue" name="color" value="darker-blue">
+            <label for="darker-blue"></label>
+              <input type="checkbox" id="red" name="color" value="red">
+            <label for="red"></label>
+              <input type="checkbox" id="orange" name="color" value="orange">
+            <label for="orange"></label>
+              <input type="checkbox" id="yellow" name="color" value="yellow">
+            <label for="yellow"></label>
+              <input type="checkbox" id="green1" name="color" value="green1">
+            <label for="green1"></label>
+              <input type="checkbox" id="green3" name="color" value="green3">
+            <label for="green3"></label>
+              <input type="checkbox" id="blue1" name="color" value="blue1">
+            <label for="blue1"></label>
+              <input type="checkbox" id="blue3" name="color" value="blue3">
+            <label for="blue3"></label>
+              <input type="checkbox" id="purple1" name="color" value="purple1">
+            <label for="purple1"></label>
+              <input type="checkbox" id="purple2" name="color" value="purple2">
+            <label for="purple2"></label>
+          </ul>
+        </li>
+
+        <li class="accordion__item price-range">
+
+          <a class="categories__title" href="#" >Price Range <i class="bi bi-chevron-up ml-auto"></i></a>
+          
+          <ul class="categories__list">
+            <div class="price-range">
+            <input type="range" min="0" max="8000" step="1" value="0" id="range-slider">
+            <div class="range-result">
+              <output>0$</output>
+              <output id="range-value"></output>
+              <output>8000$</output>
+            </div>
+    </div>
+    
+          </ul>
+        </li>
+      </ul>
+
+    </sidebar>
+    <!-- sidebar end -->
+
+    <!-- main start -->
+    <article class="shop__main__product-list">
+
+      <!-- Product Card 1 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_01.png" alt="New Arrival Products 1 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_02.png" alt="New Arrival Products 2 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-new-price">$56.12
+          <span class="shop__main__product-card-old-price">$69.36</span></p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_03.png" alt="New Arrival Products 3 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_04.png" alt="New Arrival Products 4 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_05.png" alt="New Arrival Products 5 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_06.png" alt="New Arrival Products 6 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 7 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_07.png" alt="New Arrival Products 7 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 8 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_08.png" alt="New Arrival Products 8 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-new-price">$56.12
+          <span class="shop__main__product-card-old-price">$69.36</span></p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 9 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_09.png" alt="New Arrival Products 9 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 10 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_10.png" alt="New Arrival Products 10 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 11 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_11.png" alt="New Arrival Products 11 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-new-price">$56.12
+          <span class="shop__main__product-card-old-price">$69.36</span></p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 12 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_12.png" alt="New Arrival Products 12 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 13 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_13.png" alt="New Arrival Products 13 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-new-price">$56.12
+          <span class="shop__main__product-card-old-price">$69.36</span></p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 14 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_14.png" alt="New Arrival Products 14 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 15 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_15.png" alt="New Arrival Products 15 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 16 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_16.png" alt="New Arrival Products 16 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 17 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_17.png" alt="New Arrival Products 17 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 18 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_18.png" alt="New Arrival Products 18 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 19 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_19.png" alt="New Arrival Products 19 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+      <!-- Product Card 20 -->
+      <div class="shop__main__product-card">
+        <img class="shop__main__product-img" src="../assets/img/shop/product-images/product_20.png" alt="New Arrival Products 20 Image">
+        <div class="shop__main__product-colors">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color1.png" alt="Product Color 1">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color2.png" alt="Product Color 2">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color3.png" alt="Product Color 3">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color4.png" alt="Product Color 4">
+          <img class="shop__main__product-color" src="../assets/img/shop/colors/color5.png" alt="Product Color 5">
+        </div>
+        <p class="shop__main__product-card-title">Bucklo Wrop Wooden Table</p>
+        <p class="shop__main__product-card-price">$69.36</p>
+        <a class="shop__main__product-card-add" href="#">Add to Cart</a>
+      </div>
+
+    </article>
+    <!-- main end -->
+
+  </section>
+</body>
+</html>

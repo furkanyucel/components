@@ -1,0 +1,110 @@
+.shop__main {
+  /* margin: 0 auto; */
+  min-width: 1050px;
+  height: 2020px;
+}
+
+.shop__main__product-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}
+
+.shop__main__product-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.shop__main__product-img {
+  width: 190.95px;
+  height: 190.95px;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.shop__main__product-colors {
+  margin-top: 20px;
+}
+
+.shop__main__product-color {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid transparent;
+  padding: 0.1rem;
+  border-radius: 100%;
+}
+
+.shop__main__product-color:hover {
+  border: 1px solid #E9672B;
+}
+
+.product--color--items {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 3.125rem;
+}
+
+.shop__main__product-card-title {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14.8905px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #5D5F5F;
+}
+
+.shop__main__product-card-price {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 14.8905px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #1D1F1F;
+  text-align: center;
+}
+
+.shop__main__product-card-new-price {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 14.8905px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #E9672B;
+  text-align: center;
+}
+
+.shop__main__product-card-old-price {
+  margin-left: 1rem;
+  font-weight: 400;
+  font-size: 13.0292px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-decoration-line: line-through;
+  color: #B6B8B8;
+}
+
+.shop__main__product-card-add {
+  margin-top: 10px !important;
+  font-weight: 400;
+  font-size: 13.0292px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #E9672B;
+  border: 1px solid transparent;
+  padding: 0.3rem 3rem;
+}
+
+.shop__main__product-card-add:hover {
+  text-decoration-line: none;
+  border: 1px solid #E9672B;
+  padding: 0.3rem 3rem;
+}
