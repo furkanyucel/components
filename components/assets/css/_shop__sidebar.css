@@ -1,0 +1,152 @@
+/* .shop__main {
+  width: 362px;
+  height: 1206px;
+  background-color: #de5212;
+} */
+
+/* Sidebar Start */
+sidebar {
+  height: 1206px;
+  padding: 13px;
+}
+
+.d-none {
+  display: none;
+}
+
+.bi {
+  color: #1d1f1f;
+}
+
+.filter__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1d1f1f;
+}
+
+.filter__clicked-list {
+  margin-top: 1rem;
+  display: flex;
+  gap: 40px;
+}
+
+.filter__clicked-item {
+}
+
+.filter__clicked-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #1d1f1f;
+}
+
+.dropdown-categories {
+  width: 350px;
+  margin: 50px auto;
+}
+
+.accordion__list {
+  width: 200px;
+}
+
+.accordion__item {
+  margin-top: 30px;
+  border-top: 1px solid #f4f4f5;
+  padding-top: 28px;
+}
+
+.categories__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #1d1f1f;
+}
+
+.categories__list {
+  margin-top: 1.5rem;
+}
+
+.categories__item {
+}
+
+.categories__link {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  color: #5d5f5f;
+}
+
+#categories-check {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background: #b6b8b8;
+  border: 0.5px solid #ffffff;
+}
+
+.colors input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  outline: 2px solid transparent;
+  padding: 4px;
+  appearance: none;
+  border-radius: 50%;
+}
+
+.colors input[type="checkbox"]:hover {
+  outline: 1px solid #de5212;
+}
+
+.color--list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding-bottom: 28px;
+}
+
+.ml-auto {
+  text-align: left !important;
+}
+
+
+.price-range {
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+
+#range-slider {
+  width: 99%;
+}
+
+#range-value {
+  color: #E9672B;
+  font-weight: bolder;
+}
+
+.range-result {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+  input[type="range"] {
+    appearance: none;
+    height: 4px;
+    width: 20px;
+    border-radius: 10px;
+    background: #FBF8F5;
+  }
+
+
+  /* Sidebar End */
